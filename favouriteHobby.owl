@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#hasFavourityHobby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#hasFavourityHobby">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#hasFavourityHobby"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#FavourityHobby"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Active -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Active">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#FavourityHobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#FavourityHobby -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#FavourityHobby"/>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#NotActive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#NotActive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#FavourityHobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Teacher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Lecturer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Teacher"/>
+        <hasFavourityHobby rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Painting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Lecturer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Teacher"/>
+        <hasFavourityHobby rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Surfing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Netflix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Netflix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#NotActive"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Painting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Painting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#NotActive"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#RockClimbing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#RockClimbing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Active"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student"/>
+        <hasFavourityHobby rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Painting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student"/>
+        <hasFavourityHobby rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Netflix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Student"/>
+        <hasFavourityHobby rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Surfing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Surfing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Surfing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/douwe/ontologies/2023/1/untitled-ontology-8#Active"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
